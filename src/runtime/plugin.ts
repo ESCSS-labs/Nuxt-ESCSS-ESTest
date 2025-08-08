@@ -1,5 +1,3 @@
-import { defineNuxtPlugin } from '#app'
+import { ESTest } from 'escss-estest';
 
-export default defineNuxtPlugin((_nuxtApp) => {
-  console.log('Plugin injected by my-module!')
-})
+export { ESTest };
