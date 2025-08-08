@@ -1,6 +1,6 @@
 {
   "name": "nuxt-escss-estest",
-  "version": "1.1.4",
+  "version": "2.4.0",
   "description": "The Nuxt version of escss-estest",
   "repository": "https://github.com/ESCSS-labs",
   "license": "(AGPL-3.0-only OR Commercial)",
