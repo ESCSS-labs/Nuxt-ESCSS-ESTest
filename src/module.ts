@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addImports, createResolver } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -13,7 +13,10 @@ export default defineNuxtModule<ModuleOptions>({
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
+    addImports([
+      { name: 'ESTest', from: resolver.resolve('./runtime/plugin')},
+      { name: 'unSafeESTest', from: resolver.resolve('./runtime/plugin')},
+      { name: 'createESTest', from: resolver.resolve('./runtime/plugin')},
+    ])
   },
 })

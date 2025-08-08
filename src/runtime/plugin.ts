@@ -1,3 +1,4 @@
-import { ESTest } from 'escss-estest';
+import { ESTest, unSafeESTest, createESTest } from 'escss-estest';
 
-export { ESTest };
+export { ESTest, unSafeESTest, createESTest };
+
