@@ -11,6 +11,9 @@ importers:
       '@nuxt/kit':
         specifier: ^4.0.1
         version: 4.0.3(magicast@0.3.5)
+      escss-estest:
+        specifier: ^2.4.0
+        version: 2.4.0
     devDependencies:
       '@nuxt/devtools':
         specifier: ^2.6.2
@@ -2392,6 +2395,9 @@ packages:
     resolution: {integrity: sha512-2NlIDTwUWJN0mRPQOdtQBzbUHvdGY2P1VXSyU83Q3xKxM7WHX2Ql8dKq782Q9TgQUNOLEzEYu9bzLNj1q88I5w==}
     engines: {node: '>=6.0'}
     hasBin: true
+
+  escss-estest@2.4.0:
+    resolution: {integrity: sha512-tlWDiPLb6n4ssaRhc1SJmy3Esvil4pJzJbCDhVt8fqSrq/kxeW8tMpuJ5apXAKa05Q8N798RP/5tQzydwLCpIQ==}
 
   eslint-config-flat-gitignore@2.1.0:
     resolution: {integrity: sha512-cJzNJ7L+psWp5mXM7jBX+fjHtBvvh06RBlcweMhKD8jWqQw0G78hOW5tpVALGHGFPsBV+ot2H+pdDGJy6CV8pA==}
@@ -7227,6 +7233,8 @@ snapshots:
       esutils: 2.0.3
     optionalDependencies:
       source-map: 0.6.1
+
+  escss-estest@2.4.0: {}
 
   eslint-config-flat-gitignore@2.1.0(eslint@9.32.0(jiti@2.5.1)):
     dependencies:
